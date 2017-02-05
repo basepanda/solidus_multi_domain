@@ -12,7 +12,7 @@ module SpreeMultiDomain
           end
         end
 
-        #Spree::Config.searcher_class = Spree::Search::MultiDomain
+        Spree::Config.searcher_class = Spree::Search::MultiDomain
         ApplicationController.send :include, SpreeMultiDomain::MultiDomainHelpers
       end
 
