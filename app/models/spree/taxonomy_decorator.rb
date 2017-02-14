@@ -1,3 +1,3 @@
 Spree::Taxonomy.class_eval do
-  belongs_to :store
+  has_and_belongs_to_many :store
 end
